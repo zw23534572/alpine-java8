@@ -1,0 +1,15 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: alpine-java8-deployment
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: alpine-java8
+    spec:
+      containers:
+        - name: alpine-java8
+          image: alpine-java8
+          imagePullPolicy: Never
