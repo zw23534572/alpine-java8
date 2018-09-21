@@ -1,4 +1,4 @@
-FROM registry.cn-hangzhou.aliyuncs.com/sjroom/apline-base
+FROM registry.cn-hangzhou.aliyuncs.com/sjroom/apline-base:v1.0
 
 ADD jdk1.8.0_181 /export/servers/jdk
 
