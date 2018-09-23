@@ -5,9 +5,9 @@ FROM registry.cn-shenzhen.aliyuncs.com/sjroom/apline-base
 
 # 使用oracle jdk8
 ENV JAVA_VERSION_MAJOR=8 \
-JAVA_VERSION_MINOR=73 \
-JAVA_VERSION_BUILD=02 \
-JAVA_PACKAGE=server-jre \
+    JAVA_VERSION_MINOR=73 \
+    JAVA_VERSION_BUILD=02 \
+    JAVA_PACKAGE=server-jre
 
 RUN curl -jksSLH "Cookie: oraclelicense=accept-securebackup-cookie" \
 "http://download.oracle.com/otn-pub/java/jdk/${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-b${JAVA_VERSION_BUILD}/${JAVA_PACKAGE}-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar.gz" | gunzip -c - | tar -xf - && \
