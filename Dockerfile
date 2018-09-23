@@ -1,7 +1,7 @@
 FROM registry.cn-shenzhen.aliyuncs.com/sjroom/apline-base
 
 # 使用open jre
-# RUN apk add openjdk8-jre
+RUN apk add openjdk8-jre
 
 # 使用oracle jdk8
 # ENV JAVA_VERSION_MAJOR=8 \
