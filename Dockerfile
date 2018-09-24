@@ -5,11 +5,7 @@ FROM registry.cn-shenzhen.aliyuncs.com/sjroom/apline-base
 # RUN mv /tmp/jdk1.8.0_181/ /export/servers/
 
 # 本地安装
-ADD jdk1.8.0_181 /export/servers/
-
-RUN mkdir -p /export/App && \
-    mkdir -p /export/Domains && \
-    mv /export/servers/jdk1.8.0_181 /export/servers/jdk
+ADD jdk1.8.0_181 /export/servers/jdk
 ENV JAVA_HOME /export/servers/jdk
 ENV PATH ${PATH}:${JAVA_HOME}/bin
 
