@@ -1,4 +1,4 @@
-FROM registry.cn-shenzhen.aliyuncs.com/sjroom/apline-base
+FROM registry.cn-shenzhen.aliyuncs.com/sjroom/alpine-base
 
 # 在线安装 Install JDK 8  
 # RUN cd /tmp && curl -L 'http://oi9kolnxs.bkt.clouddn.com/software/jdk-8u181-linux-x64.tar.gz' | tar -xz
