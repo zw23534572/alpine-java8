@@ -13,3 +13,7 @@ RUN chmod +x ${JAVA_HOME}/bin/*
 
 RUN echo "export JAVA_HOME=/export/servers/jdk" >> /etc/profile
 RUN source /etc/profile
+
+#启动、停止脚本(sprintboot)
+RUN echo "sh /export/App/service.sh start" >> /export/servers/script/start.sh
+RUN echo "sh /export/App/service.sh stop" >> /export/servers/script/stop.sh
